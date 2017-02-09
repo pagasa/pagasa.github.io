@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body,p,pre,ul,h1,h2,h3,h4,h5,h6,ol,dt,dd,dl,figure{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	font-size: 12px;
+	font-style: "宋体";
+	color: #333;
+}
+
+a{text-decoration: none;
+color: #808080;}
+img{border:0;}
+*{
+	box-sizing: border-box;
+}
+/*banner;*/
+.banner-c{
+	width: 100%;
+	height: 512px;
+}
+.banner-box{
+width: 100%;
+height: 100%;
+}
+.banner-l{
+	width: 100%;
+    height: 100%;
+    background-color: #0a0a0a;
+}
+
+.banner-l a{
+	display: block;
+	width: 100%;
+height: 100%;
+position: relative;
+overflow: hidden;
+
+}
+.banner-tittle{
+    width: 100%;
+    height: 130px;
+    margin:0 auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color:#000;
+    background-color: #0a0a0a;
+}
+.banner-img{
+	width: 100%;
+	height: 432px;
+	background-image: url(images/b1-l.jpg);
+	background-position: center center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+    position: absolute;
+    left:0;top: 30%;
+}
+.banner-tittle div{
+	height: 24px;
+	display: block;
+	background: url(images/iPhone.png) no-repeat center center;
+	margin:0 auto;
+
+}
+.banner-tittle h2{
+      font-size: 42px;
+      font-weight:normal;
+      color:#fff; 
+}
+@media screen and (max-width: 1068px){
+	.banner-c{
+		height:467px; 
+	}
+	.banner-img{
+		height: 360px;
+		top: 38%;
+       background-image: url(images/b1-m.jpg) ;
+       
+	}
+}
+@media screen and (max-width:735px; ){
+	.banner-c{
+		height:500px; 
+	}
+	.banner-img{
+		height: 360px;
+		top: 40%;
+       background-image: url(images/b1-s.jpg) ;
+       
+	}
+}
+/*dbu*/
+.foot{
+	width: 100%;
+	height: auto;
+	background-color: #f2f2f2;
+}
+.foot-c{
+	width: 980px;
+	height: auto;
+	margin:0 auto;
+}
+.foot-col{
+	width: 20%;
+	height: 260px;
+	background-color:red;
+	float: left;
+}
+.jiahao{
+	float: right;
+	display: none;
+}
+@media screen and (max-width: 1068px){
+	.foot-c{
+	width: 100%;
+}
+}
+@media screen and (max-width: 735px){
+    .foot-col{
+    	width: 100%;
+    	height: auto;
+    }
+    .foot-col li:not(.tittle){
+    	display: none;
+    }
+    .jiahao{display: block;}
+}	
+
+	</style>
+
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner-c">
+      <ul class="banner-box">
+      	<li class="banner-l"><a href="" class="">
+           <div class="banner-tittle">
+              <div></div>
+              <h2>This is 7</h2>
+           </div>
+           <div class="banner-img"></div>
+      	 </a></li>
+      </ul>
+	</div>
+	<!-- foot -->
+	<footer class="foot">
+      <div class="foot-c">
+        <div class="foot-col">
+        <div class="biaoti">标题<span class="jiahao">+</span></div>
+          <ul>
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          </ul>
+             <div class="biaoti">标题</div>
+           <ul>
+      
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          </ul>
+        </div>
+        <div class="foot-col"><ul>  
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          </ul></div>
+
+        <div class="foot-col"><div class="biaoti">标题</div>
+        <ul>         
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          </ul></div>
+        <div class="foot-col">
+           
+        <ul>
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          </ul></div>
+        <div class="foot-col">
+<div class="biaoti">标题</div>
+        <ul>
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          	<li>a</li>
+          </ul></div>
+      </div>
+	</footer>
+</body>
+</html>
