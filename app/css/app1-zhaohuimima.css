@@ -228,8 +228,12 @@ html{
     margin-right:0.29rem;
     float:right;
 }
-@media screen and (max-width:376px){
-    html{
-        font-size:50px;
+@media screen and (min-width: 320px){
+        html{font-size: 42.66667px;}
     }
-}
+    @media screen and (min-width: 375px){
+        html{font-size: 50px;}
+    }
+    @media screen and (min-width: 414px){
+        html{font-size: 55.2px;}
+    }
